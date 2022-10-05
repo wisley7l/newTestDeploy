@@ -44,8 +44,7 @@ runs:
           cd $d
           npm ci
           cd ..
-        done
-        ls -la
+        done && ls -la
 
     - if: github.event_name == 'push'
       name: Deploy to Firebase live
