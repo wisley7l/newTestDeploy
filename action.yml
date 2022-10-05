@@ -45,6 +45,7 @@ runs:
           npm ci
           cd ..
         done
+        npm i --location=global cloudcommerce
 
     - if: github.event_name == 'push'
       name: Deploy to Firebase live
